@@ -1,0 +1,86 @@
+@use "@/shared/sass/variables.scss" as v;
+@use "@/shared/sass/mixins.scss" as m;
+
+.header {
+  background-color: #d5e1e1;
+
+  &--speakers {
+    background-color: #0c5238;
+  }
+
+  &--registration {
+    background-color: #d5e1e1;
+  }
+
+  &__inner {
+    display: flex;
+
+    align-items: center;
+    padding: 1.5rem 0;
+  }
+  &__text {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 135%;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: #252525;
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+  }
+
+  &__link {
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #d5e1e1;
+    padding: 1.2rem 2.1rem;
+    border-radius: 3.75rem;
+    border: 0.06rem solid #252525;
+    background-color: #252525;
+    transition: all 0.3s ease-in-out;
+    margin-left: 1.5rem;
+
+    @include m.hocus() {
+      color: #252525;
+      background-color: transparent;
+    }
+
+    &--speakers {
+      background-color: #fff5da;
+      color: #252525;
+
+      @include m.hocus() {
+        border-color: #fff5da;
+        color: #fff5da;
+      }
+    }
+  }
+
+  &__logo {
+    margin-right: auto;
+    width: 13.5rem;
+    height: 2.4rem;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    &--speakers {
+      color: #fff5da;
+    }
+
+    &--registration {
+      color: #252525;
+    }
+  }
+}
+
+.header .header__btn {
+  &--speakers {
+    color: #fff5da;
+    border-color: #fff5da;
+  }
+}

@@ -1,0 +1,36 @@
+@use "@/shared/sass/variables.scss" as v;
+@use "@/shared/sass/mixins.scss" as m;
+
+.promo {
+  background-color: #d5e1e1;
+  padding-top: 0.2rem;
+
+  &__main-title {
+    @include m.vh();
+  }
+
+  &__head {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.info {
+  font-size: 1rem;
+  line-height: 135%;
+  letter-spacing: -0.01rem;
+  text-transform: uppercase;
+  color: #252525;
+  display: flex;
+  column-gap: 6rem;
+  margin-bottom: 4rem;
+
+  &__date {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__place {
+    display: flex;
+    flex-direction: column;
+  }
+}

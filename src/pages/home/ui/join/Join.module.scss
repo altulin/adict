@@ -1,0 +1,59 @@
+@use "@/shared/sass/mixins.scss" as m;
+
+.join {
+  background-color: #1b1464;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  &__head {
+    color: #fff5da;
+    margin-bottom: 2.2rem;
+  }
+
+  &__inner {
+    display: flex;
+    // align-items: center;
+  }
+
+  &__info {
+    width: 51%;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 3rem;
+    line-height: 105%;
+    letter-spacing: 0.02rem;
+    color: #fff5da;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 132%;
+    color: #fff5da;
+    display: flex;
+
+    flex-direction: column;
+  }
+
+  &__link {
+    border-radius: 18.75rem;
+    background: #00f;
+    font-weight: 300;
+    font-size: 3rem;
+    letter-spacing: -0.01em;
+    color: #fff5da;
+    padding: 6rem 12.8rem;
+    flex-shrink: 0;
+    align-self: flex-end;
+    border: 0.06rem solid #00f;
+    transition: 0.3s;
+
+    @include m.hocus() {
+      background-color: transparent;
+    }
+  }
+}

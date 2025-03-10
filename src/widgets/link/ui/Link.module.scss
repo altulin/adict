@@ -1,0 +1,30 @@
+@use "@/shared/sass/variables.scss" as v;
+@use "@/shared/sass/mixins.scss" as m;
+
+.link {
+  font-size: 1rem;
+  letter-spacing: -0.02em;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #252525;
+  border-bottom: 2px dashed #252525;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+
+  &--footer {
+    color: #d5e1e1;
+    border-color: #d5e1e1;
+  }
+
+  @include m.hocus() {
+    opacity: 0.5;
+  }
+
+  &__arr {
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0.3rem;
+    right: -0.75rem;
+  }
+}

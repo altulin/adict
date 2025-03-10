@@ -1,0 +1,99 @@
+@use "@/shared/sass/mixins.scss" as m;
+
+.footer {
+  &__line {
+    width: 100%;
+    height: 1rem;
+    background-image: url("@/shared/images/footer.svg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__content {
+    background-color: #252525;
+    padding-top: 5rem;
+    padding-bottom: 1.8rem;
+  }
+
+  &__top {
+    display: flex;
+
+    margin-bottom: 5rem;
+  }
+
+  &__figma {
+    width: 7.5rem;
+    height: 2.75rem;
+    display: block;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__figure {
+    width: 100%;
+    padding-top: 19%;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__copy {
+    font-weight: 400;
+    font-size: 0.88rem;
+    color: #d5e1e1;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+    column-gap: 0.85rem;
+
+    span {
+      opacity: 0.6;
+    }
+
+    svg {
+      width: 0.75rem;
+      height: 0.75rem;
+    }
+  }
+}
+
+.links {
+  display: flex;
+  column-gap: 4rem;
+  margin-left: auto;
+  padding-right: 1rem;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 0.81rem;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #d5e1e1;
+    margin-bottom: 2rem;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 0.7rem;
+  }
+
+  &__link {
+  }
+}

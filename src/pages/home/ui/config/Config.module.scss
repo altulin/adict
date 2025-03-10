@@ -1,0 +1,234 @@
+@use "@/shared/sass/variables.scss" as v;
+@use "@/shared/sass/mixins.scss" as m;
+
+.config {
+  display: flex;
+  align-items: center;
+  padding-top: 0.3rem;
+  margin-bottom: 3.2rem;
+  justify-content: center;
+
+  &__letter {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+
+    &--disabled {
+      pointer-events: none;
+    }
+  }
+}
+
+.letter_c {
+  &__main {
+    width: 14.5rem;
+    height: 14.5rem;
+  }
+
+  &__square {
+    position: absolute;
+    aspect-ratio: 1 / 1;
+    background-color: #252525;
+    border-radius: 50%;
+    opacity: 0;
+    width: 0%;
+  }
+}
+
+.letter_o {
+  left: -0.6rem;
+  bottom: 0.2rem;
+
+  &__main {
+    width: 14.5rem;
+    height: 14.5rem;
+  }
+
+  &__square {
+    position: absolute;
+    aspect-ratio: 1 / 1;
+    background-color: #252525;
+    opacity: 0;
+  }
+}
+
+.letter_n {
+  width: 14rem;
+  height: 14rem;
+
+  &__inner {
+    position: relative;
+    width: 89%;
+    height: 100%;
+  }
+
+  &__up {
+    position: absolute;
+    width: 7.5rem;
+    height: 6rem;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50.5%);
+  }
+
+  &__left {
+    position: absolute;
+    width: 5rem;
+    height: 8.7rem;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__right {
+    position: absolute;
+    width: 5rem;
+    height: 8.7rem;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.letter_f {
+  width: 13.4rem;
+  height: 14.8rem;
+
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 89%;
+    height: 100%;
+  }
+
+  &__up {
+    position: absolute;
+    width: 100%;
+    height: 37%;
+    top: 0;
+  }
+
+  &__middle {
+    position: absolute;
+    width: 100%;
+    height: 37%;
+    top: 32%;
+  }
+
+  &__bottom {
+    position: absolute;
+    width: 46%;
+    height: 40%;
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.letter_i {
+  width: 7.6rem;
+  align-self: stretch;
+  padding-top: 0.2rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
+  display: flex;
+  flex-direction: column;
+
+  &__inner {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  &__wrap_up {
+    width: 100%;
+    padding: 0 0.5rem;
+  }
+
+  &__up {
+    width: 100%;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    height: 0;
+    display: block;
+    position: relative;
+  }
+
+  &__square {
+    background-color: #252525;
+    position: absolute;
+    @include m.centered();
+    width: 100%;
+  }
+
+  &__circle {
+    display: block;
+    width: 100%;
+    padding-top: 100%;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    background-color: #252525;
+
+    &--top {
+      transform: translateY(-50%);
+      top: 0;
+    }
+
+    &--bottom {
+      transform: translateY(50%);
+      bottom: 0;
+    }
+  }
+
+  &__wrap_bottom {
+    width: 100%;
+    padding: 0.6rem;
+    margin-top: auto;
+  }
+
+  &__bottom {
+    width: 100%;
+    display: block;
+    padding-top: 100%;
+    background-color: #252525;
+    transform: rotate(45deg);
+    border-radius: 1.5rem;
+  }
+}
+
+.letter_g {
+  width: 14.5rem;
+  height: 14.5rem;
+  margin-left: 1rem;
+
+  &__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 79%;
+    height: 79%;
+  }
+
+  &__bottom {
+    position: absolute;
+    right: -0.2rem;
+    bottom: -0.2rem;
+    width: 47%;
+    height: 47%;
+  }
+}

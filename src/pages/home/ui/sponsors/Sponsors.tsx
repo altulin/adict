@@ -27,7 +27,7 @@ const Sponsors: FC = () => {
         </p>
 
         <div className={clsx(style.sponsors__logos)}>
-          {new Array(8).fill("").map((item, i) => (
+          {new Array(8).fill("").map((_, i) => (
             <a key={i} href="#" className={clsx(style.sponsors__logo)}>
               <figure
                 className={clsx(style.sponsors__figure)}

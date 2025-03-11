@@ -8,33 +8,30 @@ import { FC } from "react";
 import { createBrowserRouter, RouterProvider } from "react-router";
 
 const RoutesProviderFC: FC = () => {
-  const router = createBrowserRouter(
-    [
-      {
-        path: EnumRoutes.MAIN,
-        element: <BaseLayout />,
-        children: [
-          {
-            path: "/",
-            element: <PageHome />,
-          },
-          {
-            path: `/${EnumRoutes.SPEAKERS}`,
-            element: <Speakers />,
-          },
-          {
-            path: `/${EnumRoutes.REGISTRATION}`,
-            element: <Registration />,
-          },
-        ],
-      },
-      {
-        path: "*",
-        element: <div>404</div>,
-      },
-    ],
-    // { basename: import.meta.env.BASE_URL },
-  );
+  const router = createBrowserRouter([
+    {
+      path: EnumRoutes.MAIN,
+      Component: BaseLayout,
+      children: [
+        {
+          path: "/",
+          Component: PageHome,
+        },
+        {
+          path: `/${EnumRoutes.SPEAKERS}`,
+          Component: Speakers,
+        },
+        {
+          path: `/${EnumRoutes.REGISTRATION}`,
+          Component: Registration,
+        },
+      ],
+    },
+    {
+      path: "*",
+      element: <div>404</div>,
+    },
+  ]);
 
   return <RouterProvider router={router} />;
 };

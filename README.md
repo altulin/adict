@@ -10,4 +10,4 @@
 
 2. **Библиотеки используемые на проекте**
 
-   - Vite, React.js, Typescript, SASS
+   - Vite, React.js, Typescript, SASS, twgl.js

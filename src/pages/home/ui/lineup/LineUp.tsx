@@ -4,8 +4,8 @@ import style from "./LineUp.module.scss";
 import { Head } from "@/widgets/head";
 import Icon from "@/shared/images/sprite/lineup.svg";
 import { EnumRoutes } from "@/shared/types";
-import { Link } from "react-router";
 import { counts } from "./model";
+import { HashLink } from "react-router-hash-link";
 
 const LineUp: FC = () => {
   return (
@@ -24,12 +24,12 @@ const LineUp: FC = () => {
             development.
           </p>
 
-          <Link
-            to={`/${EnumRoutes.REGISTRATION}`}
+          <HashLink
+            to={`/${EnumRoutes.SPEAKERS}#top`}
             className={clsx(style.lineup__link)}
           >
             <span>see all speakers</span>
-          </Link>
+          </HashLink>
         </div>
 
         <div className={clsx(style.lineup__counters, style.counters)}>

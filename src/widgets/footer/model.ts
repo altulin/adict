@@ -37,6 +37,7 @@ export const links: ILink[] = [
       },
       {
         label: "Sponsors",
+        link: `${EnumRoutes.MAIN}#sponsors`,
       },
       {
         label: "Hotels",

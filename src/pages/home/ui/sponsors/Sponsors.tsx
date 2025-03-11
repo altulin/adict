@@ -7,7 +7,7 @@ import { Link } from "react-router";
 
 const Sponsors: FC = () => {
   return (
-    <section className={clsx(style.sponsors)}>
+    <section id="sponsors" className={clsx(style.sponsors)}>
       <div className={clsx(style.sponsors__inner, "container")}>
         <Head
           icon={Icon}

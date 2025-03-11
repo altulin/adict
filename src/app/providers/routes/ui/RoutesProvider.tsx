@@ -18,11 +18,11 @@ const RoutesProviderFC: FC = () => {
           element: <PageHome />,
         },
         {
-          path: EnumRoutes.SPEAKERS,
+          path: `/${EnumRoutes.SPEAKERS}`,
           element: <Speakers />,
         },
         {
-          path: EnumRoutes.REGISTRATION,
+          path: `/${EnumRoutes.REGISTRATION}`,
           element: <Registration />,
         },
       ],

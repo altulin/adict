@@ -4,7 +4,7 @@ import style from "./Join.module.scss";
 import { Head } from "@/widgets/head";
 import Icon from "@/shared/images/sprite/join.svg";
 import { EnumRoutes } from "@/shared/types";
-import { Link } from "react-router";
+import { HashLink } from "react-router-hash-link";
 
 const Join: FC = () => {
   return (
@@ -25,12 +25,13 @@ const Join: FC = () => {
           </p>
         </div>
 
-        <Link
-          to={`/${EnumRoutes.REGISTRATION}`}
+        <HashLink
+          to={`/${EnumRoutes.REGISTRATION}#top`}
           className={clsx(style.join__link)}
+          smooth={true}
         >
           <span>Get tickets</span>
-        </Link>
+        </HashLink>
       </div>
     </section>
   );

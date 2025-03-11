@@ -16,11 +16,11 @@ export const links: ILink[] = [
     list: [
       {
         label: "Speakers",
-        link: `/${EnumRoutes.SPEAKERS}`,
+        link: `/${EnumRoutes.SPEAKERS}#top`,
       },
       {
         label: "Get tickets",
-        link: `/${EnumRoutes.REGISTRATION}`,
+        link: `/${EnumRoutes.REGISTRATION}#top`,
       },
     ],
   },

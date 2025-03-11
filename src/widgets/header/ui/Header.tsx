@@ -14,6 +14,8 @@ const Header: FC = () => {
   const isSpeakers = pathname === `/${EnumRoutes.SPEAKERS}`;
   const isRegistration = pathname === `/${EnumRoutes.REGISTRATION}`;
 
+  console.log(pathname);
+
   return (
     <header
       className={clsx(

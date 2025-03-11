@@ -1,0 +1,50 @@
+.grille {
+  background-color: #d5e1e1;
+  padding: 3rem 0;
+
+  &__inner {
+    display: flex;
+    column-gap: 3rem;
+  }
+
+  &__head {
+    margin-bottom: 2rem;
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: 2.94rem;
+    line-height: 108%;
+    letter-spacing: -0.01em;
+    color: #252525;
+    margin-bottom: 1.5rem;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 1.44rem;
+    line-height: 133%;
+    color: #252525;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+  }
+
+  &__info {
+    flex-grow: 1;
+  }
+
+  &__content {
+    width: 50%;
+    min-height: 25rem;
+    position: relative;
+  }
+
+  &__canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}

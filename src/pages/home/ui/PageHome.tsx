@@ -4,6 +4,7 @@ import Video from "./video";
 import Join from "./join";
 import LineUp from "./lineup";
 import Sponsors from "./sponsors";
+import { Grille } from "./grille";
 
 const PageHome: FC = () => {
   return (
@@ -13,6 +14,7 @@ const PageHome: FC = () => {
       <Join />
       <LineUp />
       <Sponsors />
+      <Grille />
     </>
   );
 };

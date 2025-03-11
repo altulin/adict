@@ -10,7 +10,6 @@ const Promo: FC = () => {
     <section className={clsx(style.promo)}>
       <div className={clsx(style.promo__inner, "container")}>
         <h1 className={clsx(style["promo__main-title"])}>Title</h1>
-
         <Head icon={Icon} styles={clsx(style.promo__head)} />
 
         <div className={clsx(style.promo__info, style.info)}>

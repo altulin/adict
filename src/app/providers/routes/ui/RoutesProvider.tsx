@@ -28,7 +28,6 @@ const RoutesProviderFC: FC = () => {
           },
         ],
       },
-
       {
         path: "*",
         element: <div>404</div>,
